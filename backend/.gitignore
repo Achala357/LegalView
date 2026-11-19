@@ -1,0 +1,44 @@
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# envs
+venv/
+.venv/
+
+# model weights / data
+models/
+checkpoints/
+data/
+datasets/
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+*.onnx
+*.npz
+*.pkl
+*.parquet
+*.jsonl
+*.sqlite
+*.db
+
+# logs / outputs
+logs/
+outputs/
+wandb/
+runs/
+
+# --- RAG / FAISS indexes ---
+models/rag/**/*.index
+models/rag/**/*.faiss
+models/rag/**/*.pkl
+models/rag/**/*.json
+
+# FAISS indexes (big binaries)
+**/*.faiss.index
+**/*.faiss
+# RAG metadata (often huge)
+**/*.jsonl
+**/*faiss*metadata*

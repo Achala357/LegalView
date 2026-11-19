@@ -1,5 +1,82 @@
-node_modules
-dist
-build
+
+# ==========================================
+# LegalView - Repository-wide exclusions
+# ==========================================
+
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+
+# Python environments and caches
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# JavaScript / Node.js
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# AI/ML model weights and datasets
+models/
+checkpoints/
+data/
+datasets/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.onnx
+*.npz
+*.pkl
+*.parquet
+*.jsonl
+
+# Generated RAG indexes
+indexes/
+*.faiss
+*.index
+*faiss*metadata*
+
+# Local databases and runtime data
+*.db
+*.sqlite
+*.sqlite3
+uploads/
+upload_metadata.json
+
+# Logs and generated outputs
+logs/
+outputs/
+wandb/
+runs/
+*.log
+
+# Backups and archives
+*.zip
+*.7z
+*.rar
+
+# Hardhat / Solidity generated files
+**/artifacts/
+**/cache/
+**/typechain/
+**/typechain-types/
+**/coverage.json
+
+# OS and editor files
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
